@@ -8,8 +8,8 @@ def custom_callback():
        print('callback:', env.evaluation_result_list)
    return callback
 
-dtrain = xgb.DMatrix("C:/Users/sande/Downloads/agaricus.txt.train.txt")
-dtest = xgb.DMatrix("C:/Users/sande/Downloads/agaricus.txt.test.txt")
+dtrain = xgb.DMatrix("agaricus.txt.train")
+dtest = xgb.DMatrix("agaricus.txt.test")
 
 param = {'max_depth':2, 'eta':1, 'silent':1, 'objective':'binary:logistic'}
 
